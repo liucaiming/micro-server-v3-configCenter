@@ -9,10 +9,6 @@ spring:
   profiles: dev
   application:
     name: micro-config-client
-eureka:
-  client: #客户端注册进eureka服务列表内
-    service-url:
-      defaultZone: http://localhost:7001/eureka
 ---
 server:
   port: 8202
@@ -20,7 +16,3 @@ spring:
   profiles: test
   application:
     name: micro-config-client-test
-eureka:
-  client: #客户端注册进eureka服务列表内
-    service-url:
-      defaultZone: http://localhost:7001/eureka
